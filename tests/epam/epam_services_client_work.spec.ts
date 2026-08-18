@@ -1,13 +1,26 @@
-import { test, expect, Page } from '@playwright/test';
+/**
+ * @file epam_services_client_work.spec.ts
+ * @description Playwright TypeScript test suite for the EPAM website.
+ *
+ * Test Scenario:
+ *   1. Navigate to https://www.epam.com/
+ *   2. Select "Services" from the header menu
+ *   3. Click the "Explore Our Client Work" link
+ *   4. Verify that the "Client Work" text is visible on the page
+ *
+ * Design:
+ *   - Page Object Model (POM) via HomePage & ClientWorkPage
+ *   - test.step() wrappers for rich HTML report output
+ *   - Resilient dual CSS selectors (primary + fallback)
+ *   - JS error capture in stability test (TC-05)
+ *
+ * @author  Web Tester (Elitea QA Agent)
+ * @version 1.0.0
+ */
+
+import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 import { ClientWorkPage } from '../pages/ClientWorkPage';
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Test Suite: EPAM Services → Client Work Navigation
-// URL:        https://www.epam.com/
-// Scenario:   Navigate to homepage → open Services menu →
-//             click "Explore Our Client Work" → verify "Client Work" page
-// ─────────────────────────────────────────────────────────────────────────────
 
 test.describe('EPAM Services → Client Work Navigation', () => {
 
