@@ -1,3 +1,12 @@
+/**
+ * @file ClientWorkPage.ts
+ * @description Page Object Model for https://www.epam.com/our-work
+ * Encapsulates locators and assertion helpers for the Client Work landing page.
+ *
+ * @author  Web Tester (Elitea QA Agent)
+ * @version 1.0.0
+ */
+
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from './BasePage';
 
