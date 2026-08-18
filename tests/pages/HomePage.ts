@@ -1,3 +1,13 @@
+/**
+ * @file HomePage.ts
+ * @description Page Object Model for https://www.epam.com/
+ * Encapsulates header navigation locators and interaction methods,
+ * including the Services mega-menu and "Explore Our Client Work" link.
+ *
+ * @author  Web Tester (Elitea QA Agent)
+ * @version 1.0.0
+ */
+
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from './BasePage';
 
