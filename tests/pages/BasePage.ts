@@ -1,3 +1,12 @@
+/**
+ * @file BasePage.ts
+ * @description Abstract base class providing shared navigation helpers,
+ * cookie-banner dismissal, and reusable assertion methods for all page objects.
+ *
+ * @author  Web Tester (Elitea QA Agent)
+ * @version 1.0.0
+ */
+
 import { Page, Locator, expect } from '@playwright/test';
 
 /**
