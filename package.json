@@ -1,0 +1,30 @@
+{
+  "name": "sushma-elitea-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript test suite for EPAM website — Services → Client Work journey",
+  "private": true,
+  "scripts": {
+    "test":            "playwright test",
+    "test:headed":     "playwright test --headed",
+    "test:chromium":   "playwright test --project=chromium",
+    "test:firefox":    "playwright test --project=firefox",
+    "test:webkit":     "playwright test --project=webkit",
+    "test:epam":       "playwright test tests/epam/ --headed --project=chromium",
+    "test:smoke":      "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "report":          "playwright show-report",
+    "lint":            "eslint tests/ --ext .ts",
+    "typecheck":       "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
